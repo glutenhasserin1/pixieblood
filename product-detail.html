@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product detail</title>
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@2030&family=Kanit:wght@500&family=Outfit&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="bilder/header.png" alt="upwards oriented tribal, ends flat on the bottom, honestly just some curvy tribals that look like they have small thorns" class="header-image">
+        <nav class="main-nav">
+            <ul>
+                <div class="nav-text-items">
+                    <a href="hours.html" class="nav-item">step by</a>
+                    <a href="products.html" class="nav-item">shop</a>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="bilder/logo.png" alt="black & white digital drawing of a creep whose face splits into 3, one facing the front, 2 on the side so that profile is visible, 2 white ponytails, black eyes, 3rd eye on forehead, 2 stars besides the creep" class="logo"></a>
+                </div>
+                <div class="nav-text-items">
+                    <a href="care.html" class="nav-item">care</a>
+                    <a href="customs.html" class="nav-item">customs</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="side-flex left">
+        <img src="bilder/rand-links.png" alt="abstract tribal art work to frame the content, brainded looking strand from top to bottom, more tribals in middle area">
+    </div>
+    <main>
+        <div class="content">
+            <div class="product-detail">
+                <div class="product-image">
+                    <img src="bilder/products/p1.png.webp" alt="2 creeps merged into another, 2 females, left one black and pink hair, black eyes and pastell pink and purple overalls; right one has green glittery hair and black eyes, dark lips and mermaid-ish top; their eyes merge" onclick="openModal(this.src)">
+                    <div class="thumbnail-images">
+                        <img src="bilder/products/p1.1.png.webp" alt="same as p1, except angle is tilted to the right" onclick="openModal(this.src)">
+                        <img src="bilder/products/p1.2.png.webp" alt="same as p1, except angle is tilted to the left" onclick="openModal(this.src)">
+                        <img src="bilder/products/p1.3.png.webp" alt="backview of the creeps, now left girls hair is green and shapes a heart and two horns, right girls hair still plit in the middle - pink and black - ombre effect where their hair merges - purple color" onclick="openModal(this.src)">
+                    </div>
+                </div>
+                <div class="product-detail-info">
+                    <h2>♱⁺.⊹ trilogy ⊹.⁺♱</h2>
+                    <br><p class="price">1099€</p><br>
+                    <p>⋆ handmade with love</p>
+                    <p>⋆ part of the pride collection</p>
+                    <p>⋆ materials used: polymer clay, oil and acrylic paints</p>
+                    <p>⋆ piercings made of sterling silver</p>
+                    <p>⋆ topped with special polish to last forever</p>
+                    <p>⋆ 17cm</p><br>
+                    <button><a href="products.html" >back to shop</a></button>
+                    <button>buy now</button>
+                    <button>add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-image" id="modalImage">
+    </div>
+    <div class="side-flex right">
+        <img src="bilder/rand-rechts.png" alt="horizontally mirrored version of rand-links">
+    </div>
+    <footer>
+        <div class="footer-content">
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact</a>
+            <a href="impressum.html">legal notice</a>
+        </div>
+            <div class="footer-content">
+            <p>&copy; 2024 glutenhasserin1</p>
+        </div>
+    </footer>
+    <script>
+        function openModal(src) {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        window.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
