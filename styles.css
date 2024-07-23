@@ -30,7 +30,6 @@ a[href^="http"] {
     text-decoration: underline;
 }
 
-
 .main-nav ul {
     list-style: none;
     padding: 0;
@@ -78,6 +77,7 @@ a[href^="http"] {
 .nav-logo:hover {
     transform: scale(1.1);
 }
+
 .nav-logo a {
     border: none;
     box-shadow: none;
@@ -129,7 +129,7 @@ main {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: d3c8e4;
+    background-color: #d3c8e4;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -162,7 +162,7 @@ footer p {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    background-color: d3c8e4;
+    background-color: #d3c8e4;
     transition: transform 0.3s;
 }
 
@@ -358,7 +358,6 @@ footer p {
     background-color: #e7d5ea;
 }
 
-
 .care-page {
     display: flex;
     justify-content: center;
@@ -396,7 +395,7 @@ ul {
     box-sizing: border-box;
     width: 70%; 
     height: 150px;
- }
+}
 
 .team-pics img {
     height: auto;
@@ -408,15 +407,41 @@ ul {
     transform: scale(1.05);
 }
 
- .legal-content {
-    display:flex;
+.legal-content {
+    display: flex;
     justify-content: space-between;
- }
+}
 
+@media (max-width: 768px) {
+    .side-flex img {
+        display: none;
+    }
 
-/* notizen:
-webseiten icon: wird bei mir somehow nur in chrome angezeigt, safari nicht (mittlerweile doch?)
-tribals an der seite: wollte die eig nochmal so zeichnen, dass sie den gesamten bildschirm mehr einrahmen und nicht so statisch am rand sind 
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        margin: 20px 10px;
+    }
+
+    .content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* notes:
+webseiten icon: wird bei mir somehow nur in chrome angezeigt, safari nicht
+tribals an der seite: wollte die eig nochmal so zeichnen, dass sie den gesamten bildschirm mehr einrahmen und nich so statisch am rand sind 
 maps: iwie kann ich nicht gleichzeitig anbgerundete ecken der karte und drop shadow haben, mir wird immer nur 1 von beidem angezeigt 
 bildqualitaet: nachdem ich die bilder auf ca 100kb reduziert habe, ist die quali schlechter geworden
-daher habe ich fuer die detailansicht die bilder etwas grrr/*
+daher habe ich fuer die detailansicht die bilder etwas gr/*
