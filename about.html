@@ -36,12 +36,27 @@
     </div>
     <main>
         <div class="content">
-            <h2>hi, we are pixieblood</h2>
-            <p>and we sell creeps. creeps are sculptures hand made with love by us.</p>
-            <p>these sculptures are little functional pieces of art that you'll hopefully have forever.</p>
-            <p>please treat with love and care.</p>
+            <div class=" team-content">
+                <div class="team-info">
+                    <h2>hi, we are pixieblood</h2>
+                    <p>and we sell creeps. creeps are sculptures hand made by us. these sculptures are little functional pieces of art that you'll hopefully have forever. please treat them with equally as much love as we pour into them.</p>
+                    <p>we currently consist of a team of two. 
+                        it’s pixie blood (girlypops to the right) who is the true magician behind the creeps 
+                        and we have glutenhasserin1 (girlypops with lollipops) who takes care of the orders, social media and graphic design. 
+                        oh and we despise gluten. it's the devil. grr.</p>
+                    <p>please feel free to send us a message. we’re looking forward to creating the perfect creep personalized to your wishes! .ೃ࿔*｡</p><br>
+                </div> 
+                <div class="team-pics">
+                    <img src="bilder/glutenhasserin.png" alt="pic of the one and only gluten hater due to her violent allergies, anyways its me sitting on the floor with a lollipop in my mouth looking to the side, pic is black & white" onclick="openModal(this.src)">
+                    <img src="bilder/pixieblood.png" alt="the real face behind the creeps, pixieblood, blonde girl standing on the right hand side of a street, body turned away from the camera but face towards it, pic is black & white" onclick="openModal(this.src)">
+                </div>
+            </div>
         </div>
     </main>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-image" id="modalImage">
+    </div>
     <div class="side-flex right">
         <img src="bilder/rand-rechts.png" alt="horizontally mirrored version of rand-links">
     </div>
@@ -55,5 +70,26 @@
             <p>&copy; 2024 glutenhasserin1</p>
         </div>
     </footer>
+    <script>
+        function openModal(src) {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        window.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        window.addEventListener('load', function() {
+            closeModal();  
+        });
+        
+    </script>
 </body>
 </html>
