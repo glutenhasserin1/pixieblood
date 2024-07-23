@@ -10,7 +10,7 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: rubik vinyl;
 }
 
@@ -59,7 +59,7 @@ a[href^="http"] {
     text-decoration: none;
     color: black;
     padding: 10px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
     border: 1px solid #e3e3e3;
     border-radius: 10px;
     display: block;
@@ -71,7 +71,7 @@ a[href^="http"] {
 }
 
 .nav-item:hover {
-    background-color: #ddd;
+    background-color: #f2e8f4;
     transform: scale(1.1);
 }
 
@@ -351,28 +351,72 @@ footer p {
 }
 
 .hours-table tr:nth-child(even) {
-    background-color: #f4e8f2;
+    background-color: #f2e8f4;
 }
 
 .hours-table tr:hover {
-    background-color: #ddd;
+    background-color: #e7d5ea;
 }
 
 
 .care-page {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .materials-used {
-    flex: 1;
+    flex: 60%;
 }
 
 .care-card {
-    flex: 1;
+    flex: 40%;
 }
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+   list-style-type: "⋆";
+   list-style-position: inside;
+   padding-left: 7px;
+}
+
+.team-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 50px;
+    box-sizing: border-box;
+    width: 70%; 
+    height: 150px;
+ }
+
+.team-pics img {
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.team-pics img:hover {
+    transform: scale(1.05);
+}
+
+ .legal-content {
+    display:flex;
+    justify-content: space-between;
+ }
+
 
 /* notizen:
 webseiten icon: wird bei mir somehow nur in chrome angezeigt, safari nicht
 tribals an der seite: wollte die eig nochmal so zeichnen, dass sie den gesamten bildschirm mehr einrahmen und nich so statisch am rand sind 
-maps: nachdem ich die ecken abgerundet habe, wurde der drop shadow nicht mehr angezeigt (eig derselbe wie bei nav)/*
+maps: iwie kann ich nicht gleichzeitig anbgerundete ecken der karte und drop shadow haben, mir wird immer nur 1 von beidem angezeigt 
+bildqualitaet: nachdem ich die bilder auf ca 100kb reduziert habe, ist die quali schlechter geworden
+daher habe ich fuer die detailansicht die bilder etwas gr/*
