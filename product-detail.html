@@ -39,19 +39,21 @@
                     <img src="bilder/products/p1.png.webp" alt="2 creeps merged into another, 2 females, left one black and pink hair, black eyes and pastell pink and purple overalls; right one has green glittery hair and black eyes, dark lips and mermaid-ish top; their eyes merge" onclick="openModal(this.src)">
                     <div class="thumbnail-images">
                         <img src="bilder/products/p1.1.png.webp" alt="same as p1, except angle is tilted to the right" onclick="openModal(this.src)">
-                        <img src="bilder/products/p1.2.png.webp" alt="same as p1, except angle is tilted to the left" onclick="openModal(this.src)">
                         <img src="bilder/products/p1.3.png.webp" alt="backview of the creeps, now left girls hair is green and shapes a heart and two horns, right girls hair still plit in the middle - pink and black - ombre effect where their hair merges - purple color" onclick="openModal(this.src)">
+                        <img src="bilder/products/p1.2.png.webp" alt="same as p1, except angle is tilted to the left" onclick="openModal(this.src)">
                     </div>
                 </div>
                 <div class="product-detail-info">
-                    <h2>♱⁺.⊹ trilogy ⊹.⁺♱</h2>
-                    <br><p class="price">1099€</p><br>
-                    <p>⋆ handmade with love</p>
-                    <p>⋆ part of the pride collection</p>
-                    <p>⋆ materials used: polymer clay, oil and acrylic paints</p>
-                    <p>⋆ piercings made of sterling silver</p>
-                    <p>⋆ topped with special polish to last forever</p>
-                    <p>⋆ 17cm</p><br>
+                    <h2>♱⁺.⊹ trilogy ⊹.⁺♱</h2><br>
+                    <ul> 
+                        <li><p class="price">1099€</p></li>
+                        <li><p>handmade with love</p></li>
+                        <li><p>part of the pride collection</p></li>
+                        <li> <p>materials used: polymer clay, oil and acrylic paints</p></li>
+                        <li><p>piercings made of sterling silver</p></li>
+                        <li><p>topped with special polish to last forever</p></li>
+                        <li><p>17cm</p><br></li>
+                    </ul>
                     <button><a href="products.html" >back to shop</a></button>
                     <button>buy now</button>
                     <button>add to cart</button>
@@ -91,6 +93,12 @@
                 closeModal();
             }
         });
+
+        window.addEventListener('load', function() {
+            closeModal();  
+        });
+        
     </script>
 </body>
 </html>
+
