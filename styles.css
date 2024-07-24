@@ -74,6 +74,12 @@ a[href^="http"] {
     transform: scale(1.1);
 }
 
+.nav-item.active {
+    background-color: #ded6ea; 
+    color: black; 
+    box-shadow: 9px 5px 0px 2px rgb(66, 65, 65);
+}
+
 .nav-logo:hover {
     transform: scale(1.1);
 }
@@ -439,9 +445,8 @@ ul {
     }
 }
 
-/* notes:
+/* notizen:
 tribals an der seite: wollte die eig nochmal so zeichnen, dass sie den gesamten bildschirm mehr einrahmen und nich so statisch am rand sind 
 maps: iwie kann ich nicht gleichzeitig anbgerundete ecken der karte und drop shadow haben, mir wird immer nur 1 von beidem angezeigt 
-bildqualitaet: nachdem ich die bilder auf ca 100kb reduziert habe, ist die quali schlechter geworden
-daher habe ich fuer die detailansicht die bilder etwas gr
-im letzten schritt der css datei habe ich versucht, die mobilansicht zu optimieren, hat auch relaativ geklappt, navigation geht smoother aber ist okay denk ich/*
+bildqualitaet: nachdem ich die bilder auf ca 100kb reduziert habe, ist die quali etwas schlechter geworden
+im letzten schritt der css datei habe ich versucht, die mobilansicht zu optimieren, aber es hat nicht ganz so geklappt, wie erwartet/*
